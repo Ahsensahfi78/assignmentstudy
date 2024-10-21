@@ -10,7 +10,7 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <ul class="list-unstyled">
                 <li>
-                    <img src="images/placeholder/loading.png" alt="Alternate Text" height="100" />
+                    <img src="{{ asset('images/placeholder/loading.png') }}" alt="Alternate Text" height="100" />
 
                 </li>
                 <li>
@@ -65,7 +65,7 @@
                     <div class="wrap__article-detail">
                         <div class="wrap__article-detail-title">
                             <h1>
-                                These Are the 5 Big Tech Stories to Watch in 2017
+                                {{ $news->title }}
                             </h1>
                             <h3>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, hic.
@@ -76,21 +76,20 @@
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <figure class="image-profile">
-                                        <img src="images/placeholder/logo.png" alt="">
+                                        <img src="{{ asset('images/placeholder/logo.png') }}" alt="">
                                     </figure>
                                 </li>
-                                <li class="list-inline-item">
-
+                                <li class="list-inline-item"> 
                                     <span>
                                         by
                                     </span>
                                     <a href="#">
-                                        john doe,
+                                        {!! $news->users->name !!}.,
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <span class="text-dark text-capitalize ml-1">
-                                        descember 09, 2016
+                                        {{ \Carbon\Carbon::parse($news->date)->format('F d, Y') }}
                                     </span>
                                 </li>
                                 <li class="list-inline-item">
@@ -108,13 +107,14 @@
 
                         <div class="wrap__article-detail-image mt-4">
                             <figure>
-                                <img src="images/placeholder/800x500.jpg" alt="" class="img-fluid">
+                                <img src="{{ asset('images/' . $news->thumbnail_image) }}" alt=""
+                                    class="img-fluid">
                             </figure>
                         </div>
                         <div class="wrap__article-detail-content">
                             <div class="total-views">
                                 <div class="total-views-read">
-                                    15.k
+                                    {{$news->click}}
                                     <span>
                                         views
                                     </span>
@@ -159,65 +159,9 @@
                                 </ul>
                             </div>
                             <p class="has-drop-cap-fluid">
-                                Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic life One
-                                day however a small line of blind text by the name of Lorem Ipsum decided to leave for
-                                the far World of
-                                Grammar.
-
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the
-                                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
-                                a large language
-                                ocean. A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.
-                                <br>
-                                <br>
-                                The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
-                                Question Marks and
-                                devious Semikoli, but the Little Blind Text didn’t listen. On her way she met a copy.
-                                The copy warned the
-                                Little Blind Text, that where it came from it would have been rewritten a thousand times
-                                and everything that
-                                was left from its origin would be the word “and” and the Little Blind Text should turn
-                                around and return to
-                                its own, safe country.
-
-                                <br>
-                                The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
-                                Question Marks and
-                                devious Semikoli, but the Little Blind Text didn’t listen. On her way she met a copy.
-                                The copy warned the
-                                Little Blind Text, that where it came from it would have been rewritten a thousand times
-                                and everything that
-                                was left from its origin would be the word “and” and the Little Blind Text should turn
-                                around and return to
-                                its own, safe country.
+                                {!! $news->content !!}.
                             </p>
 
-                            <!-- Blockquote  -->
-                            <blockquote class="block-quote">
-                                <p>
-                                    It is a long established fact that a reader will be distracted by the readable
-                                    content of a page when looking at
-                                    its layout.
-                                </p>
-                                <cite>
-                                    Tom Cruise
-                                </cite>
-                            </blockquote>
-                            <!-- Blockquote -->
-
-
-                            <h5>How Tech Startup Survive Without Funding</h5>
-                            <p>
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the
-                                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
-                                a large language
-                                ocean. A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.
-                            </p>
                         </div>
 
 
@@ -637,7 +581,7 @@
                 <div class="col-md-4">
                     <div class="sticky-top">
                         <aside class="wrapper__list__article ">
-                           
+
                             <div class="wrapper__list__article-small">
                                 <div class="mb-3">
                                     <!-- Post Article -->

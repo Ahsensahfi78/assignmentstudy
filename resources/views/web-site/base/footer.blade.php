@@ -137,7 +137,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <figure class="image-logo">
-                                    <img src="images/placeholder/logo.png" alt="" class="logo-footer">
+                                    <img src="{{ asset('images/placeholder/logo.png') }}" alt="" class="logo-footer">
                                 </figure>
                             </div>
                             <div class="col-md-8 my-auto ">

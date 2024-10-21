@@ -42,7 +42,7 @@
                    </div>
                    <figure class="mb-0 mx-auto">
                        <a href="{{ route('home') }}">
-                           <img src="images/placeholder/logo.png" alt="" class="img-fluid logo">
+                           <img src="{{ asset('images/placeholder/logo.png') }}" alt="" class="img-fluid logo">
                        </a>
                    </figure>
 
@@ -116,7 +116,7 @@
                                                        <div class="article__entry">
                                                            <div class="article__image">
                                                                <a href="#">
-                                                                   <img src="images/placeholder/500x400.jpg"
+                                                                   <img src="{{ asset('images/placeholder/500x400.jpg') }}"
                                                                        alt="" class="img-fluid">
                                                                </a>
                                                            </div>
@@ -148,7 +148,7 @@
                                                        <div class="article__entry">
                                                            <div class="article__image">
                                                                <a href="#">
-                                                                   <img src="images/placeholder/500x400.jpg"
+                                                                   <img src="{{ asset('images/placeholder/500x400.jpg') }}"
                                                                        alt="" class="img-fluid">
                                                                </a>
                                                            </div>
@@ -180,7 +180,7 @@
                                                        <div class="article__entry">
                                                            <div class="article__image">
                                                                <a href="#">
-                                                                   <img src="images/placeholder/500x400.jpg"
+                                                                   <img src="{{ asset('images/placeholder/500x400.jpg') }}"
                                                                        alt="" class="img-fluid">
                                                                </a>
                                                            </div>
@@ -212,7 +212,7 @@
                                                        <div class="article__entry">
                                                            <div class="article__image">
                                                                <a href="#">
-                                                                   <img src="images/placeholder/500x400.jpg"
+                                                                   <img src="{{ asset('images/placeholder/500x400.jpg') }}"
                                                                        alt="" class="img-fluid">
                                                                </a>
                                                            </div>
@@ -244,7 +244,7 @@
                                                        <div class="article__entry">
                                                            <div class="article__image">
                                                                <a href="#">
-                                                                   <img src="images/placeholder/500x400.jpg"
+                                                                   <img src="{{ asset('images/placeholder/500x400.jpg') }}"
                                                                        alt="" class="img-fluid">
                                                                </a>
                                                            </div>

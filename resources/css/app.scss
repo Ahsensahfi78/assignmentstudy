@@ -3,6 +3,7 @@ $tablet-landscape-up: '(min-width:960px)';
 
 .editIcon {
     padding: 4px 8px !important;
+
     i {
         font-size: 14px;
     }
@@ -10,7 +11,14 @@ $tablet-landscape-up: '(min-width:960px)';
 
 .deleteIcon {
     padding: 4px 8px !important;
+
     i {
         font-size: 14px;
+    }
+}
+
+.card__post__title {
+    h5 {
+        font-size: 16px;
     }
 }

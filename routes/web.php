@@ -35,6 +35,7 @@ Route::fallback(function()
 
 Route::get('/', [\App\Http\Controllers\StaticController::class, 'home2'])->name('home');
 Route::get('/single', [\App\Http\Controllers\StaticController::class, 'singleNews'])->name('single-news');
+Route::get('/single/{slug}', [\App\Http\Controllers\StaticController::class, 'singleNews2'])->name('news-single');
 Route::get('/contact', [\App\Http\Controllers\StaticController::class, 'contact'])->name('contact');
 
 

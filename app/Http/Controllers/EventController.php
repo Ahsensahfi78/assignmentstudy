@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\category;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\photos;
+use Illuminate\Support\Str;
 use App\Models\event;
 use App\Models\News;
 use Illuminate\Support\Facades\Storage;
@@ -30,6 +32,7 @@ class EventController extends Controller
 
     public function storeNews(Request $request)
     {
+        $userId = Auth::user()->id;
         $imageFile = time() . '.' . $request->thumbnail_image->extension();
         $request->thumbnail_image->move(public_path('images'), $imageFile);
 
@@ -38,21 +41,47 @@ class EventController extends Controller
             $request->bgvideo->move(public_path('images/video'), $VideoFile);
         } else {
             $VideoFile = null;
-        } 
+        }
 
-        $eventData = [
-            'cate_id' => $request->cate_id,
-            'title' => $request->title,
-            'date' => now(),
-            'thumbnail_image' => $imageFile,
-            'content' => $request->content,
-        ];
-        News::create($eventData);
+        try {
+            // Prepare the data for the News model
+            $eventData = [
+                'cate_id' => $request->cate_id,
+                'title' => $request->title,
+                'date' => now(),
+                'slug' => $this->customSlug($request->title), 
+                'thumbnail_image' => $imageFile,
+                'content' => $request->content,
+                'user_id' => $userId,
+            ];
+
+            News::create($eventData);
+
+            return response()->json([
+                'status' => 200,
+                'message' => 'News item created successfully.',
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 500,
+                'message' => 'An error occurred: ' . $e->getMessage(),
+            ]);
+        }
 
 
         return response()->json([
             'status' => 200,
         ]);
+    }
+
+    private function customSlug($string)
+    {
+        $string = mb_convert_encoding($string, 'UTF-8', 'auto');
+        $slug = preg_replace('/\s+/u', '-', $string);
+        $slug = preg_replace('/[^\p{L}\p{N}-]+/u', '', $slug);
+        $slug = mb_strtolower($slug, 'UTF-8');
+        $slug = trim($slug, '-');
+        return $slug;
     }
 
     /**
@@ -77,7 +106,6 @@ class EventController extends Controller
 
 
         $eventData = [
-
             'cate_id' => $request->cate_id,
             'title' => $request->title,
             'date' => $request->date,
@@ -162,7 +190,7 @@ class EventController extends Controller
     public function update(Request $request)
     {
         $fileName = '';
-        $event = event::find($request->event_id);
+        $event = News::find($request->event_id);
 
         //image start
         if ($request->hasFile('thumbnail_image')) {
@@ -176,13 +204,6 @@ class EventController extends Controller
             }
         } else {
             $fileName = $request->event_image;
-        }
-
-        if ($request->bgvideo) {
-            $VideoFile = time() . '.' . $request->bgvideo->extension();
-            $request->bgvideo->move(public_path('images/video'), $VideoFile);
-        } else {
-            $VideoFile = null;
         }
 
         //image stop
@@ -207,12 +228,12 @@ class EventController extends Controller
     public function delete(Request $request)
     {
         $id = $request->id;
-        $event = event::find($id);
+        $event = News::find($id);
 
         $imagePath = public_path('images') . '/' . $event->thumbnail_image;
         if (file_exists($imagePath)) {
             unlink($imagePath);
         }
-        event::destroy($id);
+        News::destroy($id);
     }
 }

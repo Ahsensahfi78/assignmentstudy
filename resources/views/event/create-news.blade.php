@@ -16,7 +16,7 @@
                 <div class="col-sm-12 col-md-12">
                     <div class="card shadow">
 
-                        <form action="{{ route('storeNews') }}" method="POST"  enctype="multipart/form-data">
+                        <form action="{{ route('storeNews') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row modal-body p-4 bg-white">
                                 <div class="col-md-12 mb-3">
@@ -41,7 +41,7 @@
                                             <option value="{{ $category->id }}">{{ $category->name }}</option>
                                         @endforeach
                                     </select>
-                                </div> 
+                                </div>
 
                                 <div class="col-md-6 mb-3">
                                     <label for="thumbnail_image">Select Your Thumbnail</label>
@@ -51,7 +51,8 @@
 
                                 <div class="col-md-12 mb-3">
                                     <label for="content">Description</label>
-                                    <textarea name="content" id="content" class="form-control" rows="4" placeholder="Enter description" required></textarea>
+                                    <textarea name="content" id="summernote" rows="5" class="form-control"></textarea>
+
                                 </div>
 
 
@@ -72,4 +73,28 @@
     </main>
     {{-- this is ajax script coding --}}
     @include('event.event_ajax')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Summernote CSS and JS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
+
+    <!-- Initialize Summernote -->
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                height: 300, // set editor height
+                placeholder: 'Write your content here...',
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']]
+                ]
+            });
+        });
+    </script>
 @endsection

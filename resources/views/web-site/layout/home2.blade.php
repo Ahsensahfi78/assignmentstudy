@@ -34,7 +34,7 @@
     <!-- End loading -->
 
     @include('web-site.base.header')
- 
+
     <!-- End Header news -->
     <!-- Tranding news  carousel-->
     <section class="bg-light">
@@ -45,50 +45,7 @@
                         <div class="item">
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
-                               
 
-
-                                <div class="card__post__body ">
-                                    <div class="card__post__content">
-
-                                        <div class="card__post__author-info mb-2">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <span class="text-primary">
-                                                        by david hall
-                                                    </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <span class="text-dark text-capitalize">
-                                                        descember 09, 2016
-                                                    </span>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                        <div class="card__post__title">
-                                            <h6>
-                                                <a href="{{ route('single-news') }}">
-                                                    6 Best Tips for Building a Good Shipping Boat
-                                                </a>
-                                            </h6>
-                                            <!-- <p class="d-none d-lg-block d-xl-block">
-                    Maecenas accumsan tortor ut velit pharetra mollis. Proin eu nisl et arcu iaculis placerat
-                    sollicitudin ut est. In fringilla dui dui.
-                </p> -->
-
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <!-- Post Article -->
-                            <div class="card__post card__post-list">
-                                
 
 
                                 <div class="card__post__body ">
@@ -131,49 +88,7 @@
                         <div class="item">
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
-                                
 
-                                <div class="card__post__body ">
-                                    <div class="card__post__content">
-
-                                        <div class="card__post__author-info mb-2">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <span class="text-primary">
-                                                        by david hall
-                                                    </span>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <span class="text-dark text-capitalize">
-                                                        descember 09, 2016
-                                                    </span>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                        <div class="card__post__title">
-                                            <h6>
-                                                <a href="{{ route('single-news') }}">
-                                                    6 Best Tips for Building a Good Shipping Boat
-                                                </a>
-                                            </h6>
-                                            <!-- <p class="d-none d-lg-block d-xl-block">
-                    Maecenas accumsan tortor ut velit pharetra mollis. Proin eu nisl et arcu iaculis placerat
-                    sollicitudin ut est. In fringilla dui dui.
-                </p> -->
-
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <!-- Post Article -->
-                            <div class="card__post card__post-list">
-                              
 
 
                                 <div class="card__post__body ">
@@ -216,7 +131,6 @@
                         <div class="item">
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
-                              
 
 
                                 <div class="card__post__body ">
@@ -259,7 +173,93 @@
                         <div class="item">
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
-                               
+
+
+
+                                <div class="card__post__body ">
+                                    <div class="card__post__content">
+
+                                        <div class="card__post__author-info mb-2">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <span class="text-primary">
+                                                        by david hall
+                                                    </span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <span class="text-dark text-capitalize">
+                                                        descember 09, 2016
+                                                    </span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="card__post__title">
+                                            <h6>
+                                                <a href="{{ route('single-news') }}">
+                                                    6 Best Tips for Building a Good Shipping Boat
+                                                </a>
+                                            </h6>
+                                            <!-- <p class="d-none d-lg-block d-xl-block">
+                    Maecenas accumsan tortor ut velit pharetra mollis. Proin eu nisl et arcu iaculis placerat
+                    sollicitudin ut est. In fringilla dui dui.
+                </p> -->
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- Post Article -->
+                            <div class="card__post card__post-list">
+
+
+
+                                <div class="card__post__body ">
+                                    <div class="card__post__content">
+
+                                        <div class="card__post__author-info mb-2">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <span class="text-primary">
+                                                        by david hall
+                                                    </span>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <span class="text-dark text-capitalize">
+                                                        descember 09, 2016
+                                                    </span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="card__post__title">
+                                            <h6>
+                                                <a href="{{ route('single-news') }}">
+                                                    6 Best Tips for Building a Good Shipping Boat
+                                                </a>
+                                            </h6>
+                                            <!-- <p class="d-none d-lg-block d-xl-block">
+                    Maecenas accumsan tortor ut velit pharetra mollis. Proin eu nisl et arcu iaculis placerat
+                    sollicitudin ut est. In fringilla dui dui.
+                </p> -->
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- Post Article -->
+                            <div class="card__post card__post-list">
+
 
 
                                 <div class="card__post__body ">
@@ -315,36 +315,39 @@
                 <div class="row no-gutters">
                     <div class="col-md-8 ">
                         <div class="card__post-carousel">
+
+                            
+                            @foreach ($newslist->slice(0, 2) as $news)
                             <div class="item">
                                 <!-- Post Article -->
                                 <div class="card__post">
                                     <div class="card__post__body">
-                                        <a href="{{ route('single-news') }}">
-                                            <img src="images/placeholder/800x600.jpg" class="img-fluid"
+                                        <a href="{{ route('news-single',[$news->slug]) }}">
+                                            <img src="{{ asset('images/' . $news->thumbnail_image) }}" class="img-fluid"
                                                 alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
                                             <div class="card__post__category">
-                                                covid-19
+                                                {{ $news->category->name }}
                                             </div>
                                             <div class="card__post__title">
                                                 <h2>
-                                                    <a href="#">
-                                                        Global solidarity to fight COVID-19, and indonesia stay safe and
-                                                        health
+                                                    <a href="{{ route('news-single',[$news->slug]) }}">
+                                                        {{$news->title}}
                                                     </a>
                                                 </h2>
                                             </div>
                                             <div class="card__post__author-info">
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
-                                                        <a href="#">
-                                                            by david hall
+                                                        <a href="{{ route('news-single',[$news->slug]) }}">
+                                                            by {{$news->users->name}} <i class="fa fa-eye mx-1" aria-hidden="true">&nbsp;{{$news->click}}</i>
+
                                                         </a>
                                                     </li>
                                                     <li class="list-inline-item">
                                                         <span>
-                                                            Descember 09, 2016
+                                                            {{ \Carbon\Carbon::parse($news->date)->format('F d, Y') }}
                                                         </span>
                                                     </li>
                                                 </ul>
@@ -355,120 +358,55 @@
 
                                 </div>
                             </div>
-                            <div class="item">
-                                <!-- Post Article -->
-                                <div class="card__post">
-                                    <div class="card__post__body">
-                                        <a href="{{ route('single-news') }}">
-                                            <img src="images/placeholder/800x600.jpg" class="img-fluid"
-                                                alt="">
-                                        </a>
-                                        <div class="card__post__content bg__post-cover">
-                                            <div class="card__post__category">
-                                                covid-19
-                                            </div>
-                                            <div class="card__post__title">
-                                                <h2>
-                                                    <a href="#">
-                                                        Global solidarity to fight COVID-19, and indonesia stay safe and
-                                                        health
-                                                    </a>
-                                                </h2>
-                                            </div>
-                                            <div class="card__post__author-info">
-                                                <ul class="list-inline">
-                                                    <li class="list-inline-item">
-                                                        <a href="#">
-                                                            by david hall
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <span>
-                                                            Descember 09, 2016
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
+                            @endforeach
+                            
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="popular__news-right">
                             <!-- Post Article -->
-                            <div class="card__post ">
-                                <div class="card__post__body card__post__transition">
-                                    <a href="{{ route('single-news') }}">
-                                        <img src="images/placeholder/600x400.jpg" class="img-fluid" alt="">
-                                    </a>
-                                    <div class="card__post__content bg__post-cover">
-                                        <div class="card__post__category">
-                                            politics
-                                        </div>
-                                        <div class="card__post__title">
-                                            <h5>
-                                                <a href="{{ route('single-news') }}">
-                                                    Barack Obama and Family Visit borobudur temple enjoy holiday
-                                                    indonesia.</a>
-                                            </h5>
-                                        </div>
-                                        <div class="card__post__author-info">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a href="{{ route('single-news') }}">
-                                                        by david hall
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <span>
-                                                        Descember 09, 2016
-                                                    </span>
-                                                </li>
-                                            </ul>
+
+
+
+                            @foreach ($newslist->slice(0, 2) as $news)
+                                <div class="card__post ">
+                                    <div class="card__post__body card__post__transition">
+                                        <a href="{{ route('news-single',[$news->slug]) }}">
+                                            <img src="{{ asset('images/' . $news->thumbnail_image) }}"
+                                                class="img-fluid" alt="">
+
+                                        </a>
+                                        <div class="card__post__content bg__post-cover">
+                                            <div class="card__post__category">
+                                                {{ $news->category->name }}
+                                            </div>
+                                            <div class="card__post__title">
+                                                <h5>
+                                                    <a href="{{ route('news-single',[$news->slug]) }}">
+                                                        {{ $news->title }}</a>
+                                                </h5>
+                                            </div>
+                                            <div class="card__post__author-info">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="{{ route('news-single',[$news->slug]) }}">
+                                                            by {{ $news->users->name }} <i class="fa fa-eye mx-1" aria-hidden="true">&nbsp;{{$news->click}}</i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <span>
+                                                            {{ \Carbon\Carbon::parse($news->date)->format('F d, Y') }}
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                            </div>
-                            <!-- Post Article -->
-                            <div class="card__post ">
-                                <div class="card__post__body card__post__transition">
-                                    <a href="{{ route('single-news') }}">
-                                        <img src="images/placeholder/600x400.jpg" class="img-fluid" alt="">
-                                    </a>
-                                    <div class="card__post__content bg__post-cover">
-                                        <div class="card__post__category">
-                                            politics
-                                        </div>
-                                        <div class="card__post__title">
-                                            <h5>
-                                                <a href="{{ route('single-news') }}">
-                                                    Barack Obama and Family Visit borobudur temple enjoy holiday
-                                                    indonesia.</a>
-                                            </h5>
-                                        </div>
-                                        <div class="card__post__author-info">
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a href="{{ route('single-news') }}">
-                                                        by david hall
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <span>
-                                                        Descember 09, 2016
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
+                            @endforeach
 
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1946,8 +1884,7 @@
                                 <h4 class="border_section">Advertise</h4>
                                 <a href="#">
                                     <figure>
-                                        <img src="images/placeholder/600x400.jpg" alt=""
-                                            class="img-fluid">
+                                        <img src="images/placeholder/600x400.jpg" alt="" class="img-fluid">
                                     </figure>
                                 </a>
                             </aside>
@@ -1961,8 +1898,7 @@
                                     </h6>
                                     <p><small>Get magzrenvi daily newsletter on your inbox.</small></p>
                                     <div class="input-group ">
-                                        <input type="text" class="form-control"
-                                            placeholder="Your email address">
+                                        <input type="text" class="form-control" placeholder="Your email address">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">sign up</button>
                                         </div>
@@ -1974,8 +1910,7 @@
                     <div class="mx-auto">
                         <!-- Pagination -->
                         <div class="pagination-area">
-                            <div class="pagination wow fadeIn animated" data-wow-duration="2s"
-                                data-wow-delay="0.5s"
+                            <div class="pagination wow fadeIn animated" data-wow-duration="2s" data-wow-delay="0.5s"
                                 style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeIn;">
                                 <a href="#">
                                     «
@@ -2010,14 +1945,14 @@
     </section>
     <!-- End Popular news category -->
 
- 
-@include('web-site.base.footer')
+
+    @include('web-site.base.footer')
 
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
 </body>
 
- 
+
 
 </html>
