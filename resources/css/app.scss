@@ -1,0 +1,16 @@
+$mobile-only: '(max-width:599px)';
+$tablet-landscape-up: '(min-width:960px)';
+
+.editIcon {
+    padding: 4px 8px !important;
+    i {
+        font-size: 14px;
+    }
+}
+
+.deleteIcon {
+    padding: 4px 8px !important;
+    i {
+        font-size: 14px;
+    }
+}
