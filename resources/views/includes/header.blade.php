@@ -1,8 +1,5 @@
- <!-- ======= Header ======= -->
- 
-
-
- <header id="header" class="header fixed-top d-flex align-items-center">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="{{route('home')}}" class="logo d-flex align-items-center">
@@ -38,7 +35,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>{{Auth::user()->name}}</h6>
+              <h6>Mufeeth</h6>
               <span>Admin</span>
             </li>
             <li>

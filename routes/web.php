@@ -30,6 +30,7 @@ Route::fallback(function()
 });
 
 
+ 
 
 
 Route::get('/', [\App\Http\Controllers\StaticController::class, 'home2'])->name('home');
