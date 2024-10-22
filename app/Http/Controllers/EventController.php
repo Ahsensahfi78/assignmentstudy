@@ -160,7 +160,7 @@ class EventController extends Controller
                  <td>' . $event->date . '</td>
 
                  <td>
-                   <a href="#" id="' . $event->id . '" class="btn btn-primary mx-1 editIcon" data-bs-toggle="modal" data-bs-target="#editEventModal"><i class="bi-pencil-square h6"></i></a>
+                   <a href="'.route('event_edit', $event->id).'" class="btn btn-primary mx-1 editIcon" ><i class="bi-pencil-square h6"></i></a>
 
                    <a href="#" id="' . $event->id . '" class="btn btn-danger mx-1 deleteIcon"><i class="bi-trash h6"></i></a>
                  </td>
@@ -178,9 +178,11 @@ class EventController extends Controller
      */
     public function edit(Request $request)
     {
-        $id = $request->id;
-        $event = event::find($id);
-        return response()->json($event);
+        $news = News::find($request->id);
+        $categorys = category::all();
+
+        return view('event.edit', compact('categorys','news'));
+       
     }
 
     /**

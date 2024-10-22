@@ -67,6 +67,7 @@ Route::get('/event', [\App\Http\Controllers\EventController::class, 'index'])->n
 Route::get('/event-create', [\App\Http\Controllers\EventController::class, 'createNews'])->name('createNews');
 Route::post('/event_store', [\App\Http\Controllers\EventController::class, 'store'])->name('event_store');
 Route::get('/event_show', [\App\Http\Controllers\EventController::class, 'show'])->name('event_show');
-Route::get('event_edit', [\App\Http\Controllers\EventController::class, 'edit'])->name('event_edit');
+//Route::post('/event_edit/{id}', [\App\Http\Controllers\EventController::class, 'edit'])->name('event_edit');
+Route::get('/event_edit/{id}', [\App\Http\Controllers\EventController::class, 'edit'])->name('event_edit');
 Route::post('/event_update', [\App\Http\Controllers\EventController::class, 'update'])->name('event_update');
 Route::delete('/event_delete', [\App\Http\Controllers\EventController::class, 'delete'])->name('event_delete');

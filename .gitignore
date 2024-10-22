@@ -2,6 +2,7 @@
 /vendor
 
 /public/hot
+/public/images
 /public/storage
 /public/assets/upload
 /public/assets/vendor

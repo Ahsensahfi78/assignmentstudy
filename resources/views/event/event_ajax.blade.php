@@ -67,28 +67,7 @@ $("#thumbnail_image").on("change", function () {
                 }
             });
         }
-
-        // edit employee ajax request
-        $(document).on('click', '.editIcon', function(e) {
-            e.preventDefault();
-            let id = $(this).attr('id');
-            $.ajax({
-                url: '{{ route('event_edit') }}',
-                method: 'get',
-                data: {
-                    id: id,
-                    _token: '{{ csrf_token() }}'
-                },
-                success: function(response) {
-                    $("#edit_title").val(response.title);
-                    $("#edit_cate_id").val(response.cate_id);
-                    $("#edit_date").val(response.date);
-                    $("#image").html(`<img src="images/${response.thumbnail_image}" width="100" class="img-fluid img-thumbnail">`);
-                    $("#event_id").val(response.id);
-                    $("#event_image").val(response.thumbnail_image);
-                }
-            });
-        });
+ 
 
 
         // update employee ajax request
